@@ -1,6 +1,6 @@
 {
   "name": "@przeprogramowani/design-tokens",
-  "version": "2.0.1",
+  "version": "2.1.1",
   "description": "Design tokens collection for Przeprogramowani Design System",
   "license": "MIT",
   "keywords": [
@@ -28,7 +28,8 @@
     "build:bundle": "rollup -c",
     "clean": "rimraf dist",
     "release": "npm run build && np",
-    "test": "vitest run"
+    "test": "vitest run",
+    "update:token": "./update_token.sh"
   },
   "devDependencies": {
     "@rollup/plugin-node-resolve": "^15.2.3",
@@ -39,6 +40,7 @@
     "rollup": "^4.14.1",
     "rollup-plugin-dts": "^6.1.0",
     "style-dictionary": "^3.9.2",
+    "typescript": "^5.4.5",
     "vitest": "^1.4.0"
   },
   "repository": {
